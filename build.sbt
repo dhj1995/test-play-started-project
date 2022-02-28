@@ -22,3 +22,8 @@ lazy val root = (project in file("."))
     // Make verbose tests
     testOptions in Test := Seq(Tests.Argument(TestFrameworks.JUnit, "-a", "-v"))
   )
+
+libraryDependencies += "org.apache.tika" % "tika-core" % "2.2.1"
+libraryDependencies += "org.apache.tika" % "tika-parser-pdf-module" % "2.2.1"
+libraryDependencies += "org.apache.httpcomponents" % "httpclient" % "4.5.9"
+libraryDependencies += "org.apache.httpcomponents" % "httpmime" % "4.5.9"
